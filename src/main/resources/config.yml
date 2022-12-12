@@ -1,0 +1,2 @@
+chat: # %displayname%, %message%
+  format: "%displayname% &7» &f%message%"
