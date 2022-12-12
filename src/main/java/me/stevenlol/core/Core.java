@@ -32,6 +32,7 @@ public final class Core extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
+        files = new ConfigFiles(this);
 
         database = new Database();
         database.connect();
@@ -40,7 +41,6 @@ public final class Core extends JavaPlugin {
         new SafetyChecks(this);
 
         // Files and Folders
-        files = new ConfigFiles(this);
 
         // Commands
         commandManager = new PaperCommandManager(this);
